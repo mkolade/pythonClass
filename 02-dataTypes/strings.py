@@ -21,7 +21,7 @@ fullName += "!"
 #Casting to string
 yearOfBirth = str(1980)
 #print(type(yearOfBirth))#<class 'str'>
-print("I Love " + fullName + " from the " + yearOfBirth + "s.")#I Love Dave Gray! from the 1980s.
+#print("I Love " + fullName + " from the " + yearOfBirth + "s.")#I Love Dave Gray! from the 1980s.
 
 #Multiple line statements
 multiLine = """
@@ -31,22 +31,30 @@ How are you feeling today?
 
             Just checking on you asshole.
 """
-print(multiLine)
+#print(multiLine)
 
 #Escaping special characters
 sentence = 'I\'m back home.\tHey!\n\nWhere\'s my shit at\\located'
-print(sentence)
+#print(sentence)
 
 #STRING METHODS
 
-print(first)#Dave
-print(first.lower()) if first.isupper() else print(first.upper())#DAVE
-print(first)#Dave
+# print(first)#Dave
+# print(first.lower()) if first.isupper() else print(first.upper())#DAVE
+# print(first)#Dave
 multiLine = multiLine.title()
-print(multiLine)
+#print(multiLine)
 #print(multiLine.replace("Asshole","Faggot"))
 multiLine += "                   "
 multiLine = "                   " + multiLine
-print(len(multiLine.strip()))#81  Gets rid of white spaces
-print(len(multiLine.lstrip()))#101
-print(len(multiLine.rstrip()))#101
+# print(len(multiLine.strip()))#81  Gets rid of white spaces
+# print(len(multiLine.lstrip()))#101
+# print(len(multiLine.rstrip()))#101
+
+#STRING INDEX
+print(first[1])# a
+print(first[-1])# e
+print(first[0:-1])# Dav
+print(first[0:])# Dave
+
+#

@@ -1,7 +1,7 @@
 #Creating Menu
 
-title = "Menu"
+title = "Menu".upper()
 print(title.center(20,"="))
-print("Coke".rjust(6,".") + "$1".ljust(4))
-print("Bread".rjust(6,".") + "$6".ljust(4))
-print("Beans".rjust(6,".") + "$5".ljust(4))
+print("Coke".ljust(17,".") + "$1".rjust(4))
+print("Bread".ljust(16,".") + "$16".rjust(4))
+print("Beans".ljust(16,".") + "$5".rjust(4))
