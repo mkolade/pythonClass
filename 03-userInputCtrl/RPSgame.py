@@ -1,5 +1,13 @@
 import sys
 import random
+from enum import Enum
+
+class RPS(Enum):
+    ROCK = 1
+    PAPER = 2
+    SCISSORS = 3
+
+print(RPS(2))
 
 playerValue = input("Enter... \n1 for Rock,\n2 for Paper or \n3 for Scissors:\n\n")
 playerChoice = int(playerValue)
