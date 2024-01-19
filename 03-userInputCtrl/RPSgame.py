@@ -8,6 +8,9 @@ class RPS(Enum):
     SCISSORS = 3
 
 print(RPS(2))
+# print(RPS['ROCK'])
+# print(RPS.ROCK)
+# print(RPS['ROCK'].value)
 
 playerValue = input("Enter... \n1 for Rock,\n2 for Paper or \n3 for Scissors:\n\n")
 playerChoice = int(playerValue)
@@ -19,8 +22,8 @@ compValue = random.choice("123")
 compChoice = int(compValue)
 
 print("")
-print("You chose " + playerValue + ".")
-print("Python chose " + compValue + ".")
+print("You chose " + str(RPS(playerChoice)).replace("RPS.", '') + ".")
+print("Python chose " + str(RPS(compChoice)).replace("RPS.", '') + ".")
 print("")
 
 
