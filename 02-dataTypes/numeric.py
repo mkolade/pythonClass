@@ -28,4 +28,10 @@ print(round(myFloat, 1), "\n")# 3.7
 print(round(math.pi,3))#3.142
 print(math.sqrt(64))# 8.0
 print(math.floor(myFloat))#3
-print(math.ceil(myFloat))#4
+print(math.ceil(myFloat), "\n")#4
+
+#casting string to num and vice-versa
+myNum = 22
+inStr = str(myNum)
+print(inStr + "89u89")#string - 2289u89
+print(int(inStr) * 2)#integer - 44
