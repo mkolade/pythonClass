@@ -55,6 +55,14 @@ multiLine = "                   " + multiLine
 print(first[1])# a
 print(first[-1])# e
 print(first[0:-1])# Dav
-print(first[0:])# Dave
+print(first[0:] + "\n")# Dave
 
-#
+#Methods that return BOOLEAN
+print(first.startswith("D")) # True
+print(first.endswith("D")) # False
+
+#More on BOOLEAN
+myBool = True
+myFalse = bool(False)
+print(type(myBool)) #<class 'bool'>
+print(isinstance(myFalse,bool)) # True
