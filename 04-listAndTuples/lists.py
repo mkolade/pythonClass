@@ -66,12 +66,16 @@ print(nums)#[66, 3, 85, 22, 5, 33]
 print(sorted(nums,reverse=True))#[66, 3, 85, 22, 5, 33]
 
 #To generate new copies of the List
-# newCopy = nums.copy()
+newCopy = nums.copy()
 # print(newCopy)#[66, 3, 85, 22, 5, 33]
-# listCopy = list(nums)
+listCopy = list(nums)
 # print(listCopy)#[66, 3, 85, 22, 5, 33]
-# dotCopy = nums[:]
+dotCopy = nums[:]
 # print(dotCopy)#[66, 3, 85, 22, 5, 33]
 
 #To get the type of a list
+#print(type(nums))#<class 'list'>
 
+#creating a list with the list constructor
+someList = list([12,33,4,567,65])
+#print(someList)#[12, 33, 4, 567, 65]
