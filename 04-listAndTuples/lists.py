@@ -73,4 +73,5 @@ print(sorted(nums,reverse=True))#[66, 3, 85, 22, 5, 33]
 # dotCopy = nums[:]
 # print(dotCopy)#[66, 3, 85, 22, 5, 33]
 
+#To get the type of a list
 
