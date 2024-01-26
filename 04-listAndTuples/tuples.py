@@ -8,3 +8,14 @@ print(secondTuple)#('My', 'Name', 'Is')
 
 #To change the contents of a tuple, you gotta get creative
 tuListOne = list(firstTuple)
+tuListTwo = list(secondTuple)
+
+tuListOne += tuListTwo
+print(tuListOne)
+myPass = input("Enter Code to reveal NAME~: \n")
+if myPass == '3':
+    tuListOne.append("Yo mama's titties")
+    myAppendedTuple = tuple(tuListOne)
+    print(myAppendedTuple)
+else :
+    print("Wrong code")
