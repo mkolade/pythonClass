@@ -20,3 +20,10 @@ print(firstDict.keys())#(['Name', 'Class'])
 print(firstDict.values())#dict_values(['Akolade', 'Baller']) 
 #all items
 print(firstDict.items())#dict_items([('Name', 'Akolade'), ('Class', 'Baller')])
+
+print("Name" in firstDict)#True
+
+#To update a dict
+secondDict["Class"] = "Hustler"
+secondDict.update({"Name" : "Muhkid", "Style":"On the Look"})
+print(secondDict)#{'Name': 'Muhkid', 'Class': 'Hustler', 'Style': 'On the Look'}
