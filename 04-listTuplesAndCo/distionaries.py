@@ -5,3 +5,6 @@ firstDict = {
     "Name": "Akolade",
     "Class": "Baller"
 }
+secondDict = dict(Name="Akolade", Class = "Baller")
+print(firstDict)
+print(secondDict)
