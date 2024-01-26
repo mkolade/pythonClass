@@ -27,3 +27,9 @@ print("Name" in firstDict)#True
 secondDict["Class"] = "Hustler"
 secondDict.update({"Name" : "Muhkid", "Style":"On the Look"})
 print(secondDict)#{'Name': 'Muhkid', 'Class': 'Hustler', 'Style': 'On the Look'}
+
+#To remove an item
+print(secondDict.pop("Style"))#On the Look
+print(secondDict.popitem())#returns a tuple -('Class', 'Hustler')
+
+#To delete and clear an item
