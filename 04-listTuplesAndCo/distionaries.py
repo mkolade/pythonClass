@@ -33,3 +33,15 @@ print(secondDict.pop("Style"))#On the Look
 print(secondDict.popitem())#returns a tuple -('Class', 'Hustler')
 
 #To delete and clear an item
+secondDict["age"] = "Akan"
+del secondDict["age"]
+print(secondDict)#{'Name': 'Muhkid'}
+
+firstDict.clear()
+print(firstDict)#{}
+
+#copying a dict
+copy3 = secondDict.copy()
+copy4 = dict(secondDict)
+# print(copy3)#{'Name': 'Muhkid'}
+# print(copy4)#{'Name': 'Muhkid'}
