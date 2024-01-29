@@ -1,4 +1,4 @@
-#LISTS
+#LISTS - very similar to javascript arrays
 
 firstList = ["Mali",33,False]
 secondList = ["Mali","Teqiat","Dave"]
