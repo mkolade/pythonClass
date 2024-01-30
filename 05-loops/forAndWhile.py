@@ -20,12 +20,12 @@ names = ["mk", "ak", "sk", "az"]
 for name in names:
     if(name == "sk"):
         break
-    print(name)#mk ak
+    #print(name)#mk ak
 
 for name in names:
     if(name == "sk"):
         continue
-    print(name)#mk ak az
+    #print(name)#mk ak az
 
 #RANGE
 # for x in range(4):
@@ -34,7 +34,37 @@ for name in names:
 # for y in range(1,5):
 #     print(y)# 1 2 3 4
     
-for(x) in range(0,25,5):
-    print(x)#0 5 10 15 20
-else:
-    print("Whew! that's over now")
+# for(x) in range(0,25,5):
+#     print(x)#0 5 10 15 20
+# else:
+#     print("Whew! that's over now")
+    
+#Nested loops
+names = ["Moni", "Teni", "Tony"]
+actions = ["Eats", "Sleeps", "Drinks"]
+puncs = [".", ","]
+
+for name in names:
+    for action in actions:
+        for punc in puncs:
+            print(name + " " + action + punc)
+
+#Result of nested loop -
+# Moni Eats.
+# Moni Eats,
+# Moni Sleeps.
+# Moni Sleeps,
+# Moni Drinks.
+# Moni Drinks,
+# Teni Eats.
+# Teni Eats,
+# Teni Sleeps.
+# Teni Sleeps,
+# Teni Drinks.
+# Teni Drinks,
+# Tony Eats.
+# Tony Eats,
+# Tony Sleeps.
+# Tony Sleeps,
+# Tony Drinks.
+# Tony Drinks,
