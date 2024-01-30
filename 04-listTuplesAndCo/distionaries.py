@@ -45,3 +45,25 @@ copy3 = secondDict.copy()
 copy4 = dict(secondDict)
 # print(copy3)#{'Name': 'Muhkid'}
 # print(copy4)#{'Name': 'Muhkid'}
+
+#Nested dicts
+dictA = {
+    "Name":"Mohammed",
+    "Age":19
+}
+dictB = {
+    "Name":"Moshood",
+    "Age":13
+}
+bigDict = {
+    "member1":dictA,
+    "member2":dictB
+}
+print(bigDict)
+print(bigDict["member1"]["Age"])#19
+
+#Methods on dict
+bigDict.pop("member2")
+print(bigDict)#{'member1': {'Name': 'Mohammed', 'Age': 19}}
+bigDict.popitem()
+print(bigDict)#{}
