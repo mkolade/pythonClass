@@ -9,4 +9,5 @@ myOtherSet = set((1, 2, 3, 3, 4, 5, 5,7))
 mySet3 = {True,1, 2,3,4,0, False}
 #print(mySet3)#{0, True, 2, 3, 4}. True came bfr 1 so it's displayed. Also everything is arranged in ascending order
 
-#
+#checking for a value
+print(1 in mySet3)#True
