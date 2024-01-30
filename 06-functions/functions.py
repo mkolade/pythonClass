@@ -14,3 +14,10 @@ print(sum("aa",3))#None
 print(sum())#0
 total = sum(2,3)
 print(total)#5
+
+#Functions with multiple args
+def multipleArgs(*args):
+    print(args)
+    print(type(args))#<class 'tuple'>
+
+multipleArgs("Hello", "Nigga", "Lol")
