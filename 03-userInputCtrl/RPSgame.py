@@ -7,7 +7,6 @@ class RPS(Enum):
     PAPER = 2
     SCISSORS = 3
 
-print(RPS(2))
 # print(RPS['ROCK'])
 # print(RPS.ROCK)
 # print(RPS['ROCK'].value)
