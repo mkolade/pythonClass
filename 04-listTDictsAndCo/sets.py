@@ -19,8 +19,20 @@ aNum.add(6)
 mySet1.update(aNum)
 print(mySet1)#{1, 2, 3, 4, 5, 6, 7, 8, 9}
 
-#Creating a new set from merging to different ones
+#Creating a new set from merging two different ones
 one = {1, 2, 3}
 two = {4, 5, 6}
 theNewSet = one.union(two)
 print(theNewSet)#{1, 2, 3, 4, 5, 6}
+
+#Keeping only duplicates from 2 sets
+one = {1, 2, 3}
+two = {2, 3, 4}
+one.intersection_update(two)
+print(one)#{2, 3}
+
+#Keeping all except the duplicates from 2 sets
+one = {1, 2, 3}
+two = {2, 3, 4}
+one.symmetric_difference_update(two)
+print(one)#{1, 4}
