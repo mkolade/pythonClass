@@ -12,3 +12,9 @@ mySet3 = {True,1, 2,3,4,0, False}
 #checking for a value
 print(1 in mySet3)#True
 print(len(mySet3))#5
+
+#Adding values to a set
+aNum = {8,9}
+aNum.add(6)
+mySet1.update(aNum)
+print(mySet1)#{1, 2, 3, 4, 5, 6, 7, 8, 9}
