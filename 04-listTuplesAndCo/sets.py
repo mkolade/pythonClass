@@ -18,3 +18,9 @@ aNum = {8,9}
 aNum.add(6)
 mySet1.update(aNum)
 print(mySet1)#{1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+#Creating a new set from merging to different ones
+one = {1, 2, 3}
+two = {4, 5, 6}
+theNewSet = one.union(two)
+print(theNewSet)#{1, 2, 3, 4, 5, 6}
