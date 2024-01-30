@@ -63,7 +63,12 @@ print(bigDict)
 print(bigDict["member1"]["Age"])#19
 
 #Methods on dict
-bigDict.pop("member2")
-print(bigDict)#{'member1': {'Name': 'Mohammed', 'Age': 19}}
+dictC = {
+    "Name":"Aisha",
+    "Age":26
+}
+bigDict.update(dictC)
+print(bigDict.pop("member2"))
+print(bigDict)#{'member1': {'Name': 'Mohammed', 'Age': 19}, 'Name': 'Aisha', 'Age': 26}
 bigDict.popitem()
-print(bigDict)#{}
+print(bigDict)#{'member1': {'Name': 'Mohammed', 'Age': 19}, 'Name': 'Aisha'}

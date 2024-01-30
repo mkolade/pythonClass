@@ -11,3 +11,4 @@ mySet3 = {True,1, 2,3,4,0, False}
 
 #checking for a value
 print(1 in mySet3)#True
+print(len(mySet3))#5
