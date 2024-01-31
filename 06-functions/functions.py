@@ -34,11 +34,10 @@ multipleArgs("Hello", "Nigga", "Lol")
 # appendToTuple(firstTuple)#[('Hello', 'Mother-Fucker'), 'Yoo mama mia'] 2
 
 
+#so the idea is that these kwargs thingy are really dicts in disguise
 def someKwargs(**kwargs):
-    print(kwargs)
+    print(kwargs,type(kwargs))
+    print(kwargs.popitem())#('first', '13')
     return
 
-myNewDict = {
-    "Name" : "Atolagbe"
-}
-someKwargs()
+someKwargs(first = "13")
