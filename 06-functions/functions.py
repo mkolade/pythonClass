@@ -21,3 +21,14 @@ def multipleArgs(*args):
     print(type(args))#<class 'tuple'>
 
 multipleArgs("Hello", "Nigga", "Lol")
+
+#proof that args are really tuples
+def appendToTuple(*args):
+    someList = list(args)
+    anotherList = list([])
+    aTuple = tuple(("Yoo mama mia"))
+    backToList = list(aTuple)
+    someList += backToList
+    print( someList, len(someList))
+firstTuple = tuple(('Hello', 'Mother-Fucker'))
+appendToTuple(firstTuple)
