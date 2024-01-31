@@ -22,13 +22,23 @@ def multipleArgs(*args):
 
 multipleArgs("Hello", "Nigga", "Lol")
 
-#proof that args are really tuples
-def appendToTuple(*args):
-    someList = list(args)
-    anotherList = list([])
-    aTuple = tuple(("Yoo mama mia"))
-    backToList = list(aTuple)
-    someList += backToList
-    print( someList, len(someList))
-firstTuple = tuple(('Hello', 'Mother-Fucker'))
-appendToTuple(firstTuple)
+#proof that args are really tuples - The whole proof thing kinda suck. but you get the idea. Tuples are unchangeable form of lists
+# def appendToTuple(*args):
+#     someList = list(args)
+#     anotherList = list(["Yoo mama mia"])
+#     aTuple = tuple((anotherList))
+#     backToList = list(aTuple)
+#     someList += backToList
+#     print( someList, len(someList))
+# firstTuple = tuple(('Hello', 'Mother-Fucker'))
+# appendToTuple(firstTuple)#[('Hello', 'Mother-Fucker'), 'Yoo mama mia'] 2
+
+
+def someKwargs(**kwargs):
+    print(kwargs)
+    return
+
+myNewDict = {
+    "Name" : "Atolagbe"
+}
+someKwargs()
