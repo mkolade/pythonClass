@@ -15,6 +15,7 @@ name = "dave"
 #Nested function
 def anotherFunc():
     color = "Red"
+    print(name)#dave
     def printStuff(name):
         print(name, color)
     printStuff("Atolagbe")# Atolagbe Red
