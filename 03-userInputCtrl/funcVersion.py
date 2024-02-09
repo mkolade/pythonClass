@@ -2,7 +2,7 @@ import sys
 import random
 from enum import Enum
 
-
+gameCount = 0
 def play_rps():
     class RPS(Enum):
         ROCK = 1
@@ -24,18 +24,22 @@ def play_rps():
     print("\nYou chose " + str(RPS(playerChoice)).replace("RPS.", '') + ".")
     print("Python chose " + str(RPS(compChoice)).replace("RPS.", '') + ".\n")
 
-    if playerChoice == 1 and compChoice == 3:
-        print("🎉 You win!")
-    elif playerChoice == 2 and compChoice == 1:
-        print("🎉 You win!")
-    elif playerChoice == 3 and compChoice == 2:
-        print("🎉 You win!")
-    elif playerChoice == compChoice:
-        print("It's a draw 😲. Try again!")
-    else :
-        print("Python wins! 🐍 \n")
+    def getWinner(player, computer):  
+        if player == 1 and computer == 3:
+            print("🎉 You win!")
+        elif player == 2 and computer == 1:
+            print("🎉 You win!")
+        elif player == 3 and computer == 2:
+            print("🎉 You win!")
+        elif player == computer:
+            print("It's a draw 😲. Try again!")
+        else :
+            print("Python wins! 🐍 \n")
 
-    
+    getWinner(playerChoice,compChoice)
+    global gameCount
+    gameCount += 1
+    print("\n\nGames played: " + str(gameCount))
     while True:
         playAgain = input("Wanna keep playing?\n Enter Y for yes\n Q to quit\n\n")
         if(playAgain.lower() not in ["y", "q"]):
