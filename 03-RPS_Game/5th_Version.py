@@ -52,9 +52,11 @@ def rps():
         print(theWinner)
         nonlocal gameCount
         gameCount += 1
+        drawCount =gameCount - (playerWins + pythonWins)
         print("\n\nGames played: " + str(gameCount))
         print("\n\nPlayer wins: " + str(playerWins))
         print("Python wins: " + str(pythonWins))
+        print("\Tie games: " + str(drawCount))
         while True:
             playAgain = input("Wanna keep playing?\n Enter Y for yes\n Q to quit\n\n")
             if(playAgain.lower() not in ["y", "q"]):
